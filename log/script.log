@@ -1,0 +1,359 @@
+2018-08-19 20:57:36,827 [Thread-65:11188] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /admin/df_goods/typeinfo/add/
+Traceback (most recent call last):
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\contrib\admin\options.py", line 1647, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\contrib\admin\options.py", line 1579, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\contrib\admin\options.py", line 811, in log_addition
+    object_repr=str(object),
+TypeError: __str__ returned non-string (type bytes)
+2018-08-22 09:59:14,058 [Thread-3:19408] [django.request:228] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2018-08-22 11:39:21,707 [Thread-46:15024] [django.request:228] [log:log_response] [WARNING]- Not Found: /
+2018-08-22 13:51:24,312 [Thread-2:17956] [django.request:228] [log:log_response] [WARNING]- Not Found: /
+2018-08-22 13:51:32,743 [Thread-3:21072] [django.request:228] [log:log_response] [WARNING]- Not Found: /goods
+2018-08-22 13:51:41,792 [Thread-8:17080] [django.request:228] [log:log_response] [WARNING]- Not Found: /goods/index4
+2018-08-22 13:51:46,746 [Thread-22:15352] [django.request:228] [log:log_response] [WARNING]- Not Found: /goods/index/images/goods/goods019.jpg
+2018-08-22 13:51:46,750 [Thread-21:20540] [django.request:228] [log:log_response] [WARNING]- Not Found: /goods/index/images/goods/goods018.jpg
+2018-08-22 13:51:46,751 [Thread-20:7992] [django.request:228] [log:log_response] [WARNING]- Not Found: /goods/index/images/banner02.jpg
+2018-08-22 13:51:46,775 [Thread-23:11760] [django.request:228] [log:log_response] [WARNING]- Not Found: /goods/index/images/goods/goods021.jpg
+2018-08-22 13:51:46,781 [Thread-24:3992] [django.request:228] [log:log_response] [WARNING]- Not Found: /goods/index/images/goods/goods020.jpg
+2018-08-22 13:51:46,784 [Thread-25:9976] [django.request:228] [log:log_response] [WARNING]- Not Found: /goods/index/images/banner03.jpg
+2018-08-22 13:51:46,804 [Thread-26:18172] [django.request:228] [log:log_response] [WARNING]- Not Found: /goods/index/images/goods.jpg
+2018-08-22 13:51:46,807 [Thread-27:10328] [django.request:228] [log:log_response] [WARNING]- Not Found: /goods/index/images/banner04.jpg
+2018-08-22 13:51:46,809 [Thread-28:24480] [django.request:228] [log:log_response] [WARNING]- Not Found: /goods/index/images/banner05.jpg
+2018-08-22 13:51:46,813 [Thread-29:4984] [django.request:228] [log:log_response] [WARNING]- Not Found: /goods/index/images/banner06.jpg
+2018-08-22 14:07:15,837 [Thread-87:15116] [django.request:228] [log:log_response] [WARNING]- Not Found: /list1_1_1/
+2018-08-22 14:07:18,641 [Thread-88:10224] [django.request:228] [log:log_response] [WARNING]- Not Found: /list2_1_1/
+2018-08-22 14:12:48,297 [Thread-101:10568] [django.request:228] [log:log_response] [WARNING]- Not Found: /1
+2018-08-22 14:12:54,687 [Thread-103:11252] [django.request:228] [log:log_response] [WARNING]- Not Found: /1
+2018-08-22 14:14:05,652 [Thread-2:24680] [django.request:228] [log:log_response] [WARNING]- Not Found: /goods/index/
+2018-08-22 14:14:12,060 [Thread-3:12548] [django.request:228] [log:log_response] [WARNING]- Not Found: /
+2018-08-22 14:14:23,445 [Thread-2:17668] [django.request:228] [log:log_response] [WARNING]- Not Found: /
+2018-08-22 14:15:35,102 [Thread-2:21500] [django.request:228] [log:log_response] [WARNING]- Not Found: /list1_1_1/
+2018-08-22 14:15:42,203 [Thread-5:2044] [django.request:228] [log:log_response] [WARNING]- Not Found: /1
+2018-08-22 14:15:44,194 [Thread-6:24064] [django.request:228] [log:log_response] [WARNING]- Not Found: /list1_1_1/
+2018-08-22 21:04:43,056 [Thread-3:20428] [django.request:228] [log:log_response] [WARNING]- Not Found: /user/index/
+2018-08-22 21:05:26,824 [Thread-4:22892] [django.request:228] [log:log_response] [WARNING]- Not Found: /user/index/
+2018-08-22 21:05:57,188 [Thread-19:17664] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /list1_1_1/
+Traceback (most recent call last):
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\WorkSpace\PycharmProjects\dailyfresh\df_goods\views.py", line 34, in list
+    typeinfo = TypeInfo.objects.get(pk=int(tid))
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\db\models\query.py", line 399, in get
+    self.model._meta.object_name
+df_goods.models.TypeInfo.DoesNotExist: TypeInfo matching query does not exist.
+2018-08-22 21:06:03,525 [Thread-20:19136] [django.request:228] [log:log_response] [WARNING]- Not Found: /5
+2018-08-22 21:06:06,644 [Thread-21:13052] [django.request:228] [log:log_response] [WARNING]- Not Found: /4
+2018-08-22 21:06:38,074 [Thread-22:10852] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /list1_1_1/
+Traceback (most recent call last):
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\WorkSpace\PycharmProjects\dailyfresh\df_goods\views.py", line 34, in list
+    typeinfo = TypeInfo.objects.get(pk=int(tid))
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\db\models\query.py", line 399, in get
+    self.model._meta.object_name
+df_goods.models.TypeInfo.DoesNotExist: TypeInfo matching query does not exist.
+2018-08-22 21:08:30,147 [Thread-23:9604] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /list1_1_1/
+Traceback (most recent call last):
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\WorkSpace\PycharmProjects\dailyfresh\df_goods\views.py", line 34, in list
+    typeinfo = TypeInfo.objects.get(pk=int(tid))
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\db\models\query.py", line 399, in get
+    self.model._meta.object_name
+df_goods.models.TypeInfo.DoesNotExist: TypeInfo matching query does not exist.
+2018-08-22 21:08:30,649 [Thread-24:26128] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /list1_1_1/
+Traceback (most recent call last):
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\WorkSpace\PycharmProjects\dailyfresh\df_goods\views.py", line 34, in list
+    typeinfo = TypeInfo.objects.get(pk=int(tid))
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\db\models\query.py", line 399, in get
+    self.model._meta.object_name
+df_goods.models.TypeInfo.DoesNotExist: TypeInfo matching query does not exist.
+2018-08-22 21:11:08,378 [Thread-26:6668] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /list5_1_1/
+Traceback (most recent call last):
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\WorkSpace\PycharmProjects\dailyfresh\df_goods\views.py", line 52, in list
+    return render(request, 'df_goods/list.html', context)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\defaulttags.py", line 951, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' }_{{ sort' from 'page.previous_page_number }_{{ sort'
+2018-08-22 21:11:12,488 [Thread-27:17292] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /list6_1_1/
+Traceback (most recent call last):
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\WorkSpace\PycharmProjects\dailyfresh\df_goods\views.py", line 52, in list
+    return render(request, 'df_goods/list.html', context)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\defaulttags.py", line 951, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' }_{{ sort' from 'page.previous_page_number }_{{ sort'
+2018-08-22 21:14:31,738 [Thread-37:15624] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /list5_1_1/
+Traceback (most recent call last):
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\WorkSpace\PycharmProjects\dailyfresh\df_goods\views.py", line 52, in list
+    return render(request, 'df_goods/list.html', context)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\defaulttags.py", line 951, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' }_{{ sort' from 'page.previous_page_number }_{{ sort'
+2018-08-22 21:17:36,481 [Thread-39:6680] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /list5_1_1/
+Traceback (most recent call last):
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: "id|default:''!=''"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\WorkSpace\PycharmProjects\dailyfresh\df_goods\views.py", line 52, in list
+    return render(request, 'df_goods/list.html', context)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\defaulttags.py", line 950, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\defaulttags.py", line 883, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\defaulttags.py", line 886, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\WorkSpace\PythonEnvs\venv\dailyfresh\lib\site-packages\django\template\base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '!=''' from 'id|default:''!='''
